@@ -1,0 +1,29 @@
+npx create-next-app@latest my-app --typescript --tailwind --eslint
+npx shadcn-ui@latest init
+npx shadcn-ui@latest add button
+npm install nextjs-toploader
+
+
+https://ui.shadcn.com/
+npx shadcn-ui@latest add separator
+npx shadcn-ui@latest add sheet
+npx shadcn-ui@latest add dialog
+npx shadcn-ui@latest add form
+npx shadcn-ui@latest add select
+npx shadcn-ui@latest add input
+npx shadcn-ui@latest add toast
+
+
+Para todo el tema del login
+https://clerk.com/
+npm install @clerk/nextjs
+
+
+npm i prisma
+npx prisma init
+npm i @prisma/client
+npx prisma db push (subir base de datos)
+
+Para subir imagenes
+https://uploadthing.com/
+npm install uploadthing @uploadthing/react
