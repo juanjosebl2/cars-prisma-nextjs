@@ -27,3 +27,6 @@ npx prisma db push (subir base de datos)
 Para subir imagenes
 https://uploadthing.com/
 npm install uploadthing @uploadthing/react
+
+Para la api
+npm install axios

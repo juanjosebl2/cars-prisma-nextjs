@@ -1,9 +1,9 @@
 "use client";
 
+import axios from 'axios';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -25,9 +25,15 @@ import {
 } from "@/components/ui/select";
 import { UploadButton } from "@/utils/uploadthing";
 import { useState } from "react";
+import { FormAddCarProps } from "./FormAddCar.types";
+import { toast } from "@/components/ui/use-toast";
+import { useRouter } from 'next/navigation';
 
-export function FormAddCar() {
+export function FormAddCar(props: FormAddCarProps) {
+
+  const { setOpenDialog } = props;
   const [photoUploaded, setphotoUploaded] = useState(false);
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -45,8 +51,22 @@ export function FormAddCar() {
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    console.log(values);
+    setOpenDialog(false);
+    try {
+      await axios.post("/api/car", values);
+      toast({
+        title: "Coche añadido correctamente",
+      });
+      router.refresh();
+    } catch (error) {
+      toast({
+        title: "Error al añadir el coche",
+        variant: "destructive",
+      });
+    }
   };
+
+  const { isValid } = form.formState;
 
   return (
     <Form {...form}>
@@ -208,8 +228,21 @@ export function FormAddCar() {
               </FormItem>
             )}
           />
+          <FormField
+            control={form.control}
+            name="priceDay"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Precio por dia</FormLabel>
+                <FormControl>
+                  <Input placeholder="20$" type="number" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
         </div>
-        <Button type="submit">Enviar</Button>
+        <Button type="submit" className="w-full mt-5" disabled={!isValid} >Enviar</Button>
       </form>
     </Form>
   );
