@@ -3,25 +3,29 @@ import { auth } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 
 
-export async function POST(req: Request) {
+export async function PATCH(req: Request, { params } : { params: { carId: string } }) {
     try {
         const { userId } = auth();
-        const data =  await req.json();
+        const { carId } = params;
+        const values =  await req.json();
 
         if (!userId) {
             return new NextResponse("Unauthorized", { status: 401 });
         }
 
-        const car = await db.car.create({
+        const car = await db.car.update({
+            where: {
+                id: carId,
+                userId
+            },
             data: {
-                userId,
-                ...data
+                ...values
             }
         });
 
         return NextResponse.json(car, { status: 201 });
     } catch (error) {
-        console.error("[CAR]", error);
+        console.error("[CAR FORM ID]", error);
         return new NextResponse("Internal Server Error", { status: 500 });
     }
 }

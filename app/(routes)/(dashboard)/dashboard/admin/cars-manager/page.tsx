@@ -20,8 +20,6 @@ export default async function CarsManagerPage() {
     },
   });
 
-  console.log(car);
-
   return (
     <div>
       <div className="flex justify-between">

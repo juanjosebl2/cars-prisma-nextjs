@@ -70,7 +70,7 @@ export function FormAddCar(props: FormAddCarProps) {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-6 mt-4 lg:grid-cols-2">
           <FormField
             control={form.control}
             name="name"
@@ -242,7 +242,7 @@ export function FormAddCar(props: FormAddCarProps) {
           />
         </div>
         <Button type="submit" className="w-full mt-5" disabled={!isValid}>
-          Enviar
+          Añadir
         </Button>
       </form>
     </Form>
