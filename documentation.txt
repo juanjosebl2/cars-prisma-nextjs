@@ -23,6 +23,7 @@ npm i prisma
 npx prisma init
 npm i @prisma/client
 npx prisma db push (subir base de datos)
+npx prisma studio (ver contenido en la base de datos)
 
 Para subir imagenes
 https://uploadthing.com/

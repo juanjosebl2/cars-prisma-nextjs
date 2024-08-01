@@ -1,6 +1,6 @@
 "use client";
 
-import axios from 'axios';
+import axios from "axios";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -14,7 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { formSchema } from "./FormAddCar.Form";
+import { formSchema } from "./FormAddCar.form";
 
 import {
   Select,
@@ -27,10 +27,9 @@ import { UploadButton } from "@/utils/uploadthing";
 import { useState } from "react";
 import { FormAddCarProps } from "./FormAddCar.types";
 import { toast } from "@/components/ui/use-toast";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 export function FormAddCar(props: FormAddCarProps) {
-
   const { setOpenDialog } = props;
   const [photoUploaded, setphotoUploaded] = useState(false);
   const router = useRouter();
@@ -242,7 +241,9 @@ export function FormAddCar(props: FormAddCarProps) {
             )}
           />
         </div>
-        <Button type="submit" className="w-full mt-5" disabled={!isValid} >Enviar</Button>
+        <Button type="submit" className="w-full mt-5" disabled={!isValid}>
+          Enviar
+        </Button>
       </form>
     </Form>
   );
