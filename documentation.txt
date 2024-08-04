@@ -48,3 +48,6 @@ avid-fair-elate-free
 whsec_cb7531b9b0dbb341c3519a15c22b3ebf0778f4459a369ad1e178d59918074f3d
 stripe listen --forward-to localhost:3000/webhook
 npm install stripe
+
+Codigo seguridad stripe empresa
+cvbq-mpny-imcu-tdge-lbde
