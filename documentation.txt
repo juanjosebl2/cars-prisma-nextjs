@@ -39,3 +39,12 @@ npm install axios
 Para realizar pagos
 https://stripe.com/es?utm_campaign=EMEA_ES_es_Google_Search_Brand_Stripe_EXA-20811307326&utm_medium=cpc&utm_source=google&ad_content=682904374079&utm_term=stripe&utm_matchtype=e&utm_adposition=&utm_device=c&gad_source=1&gclid=Cj0KCQjwzby1BhCQARIsAJ_0t5N-AgqZY0pWGw8Q69OVQy7IHLHTDg76l52q12BpswYW6DQ0ymuyJKcaAu7DEALw_wcB
 https://docs.stripe.com/stripe-js/react
+
+npm install --save @stripe/react-stripe-js @stripe/stripe-js
+
+Seguir pasos de la pagina Stripe oficial, la de docs solo para la instalacion
+stripe login
+avid-fair-elate-free
+whsec_cb7531b9b0dbb341c3519a15c22b3ebf0778f4459a369ad1e178d59918074f3d
+stripe listen --forward-to localhost:3000/webhook
+npm install stripe
