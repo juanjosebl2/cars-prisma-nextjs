@@ -12,6 +12,10 @@ npx shadcn-ui@latest add form
 npx shadcn-ui@latest add select
 npx shadcn-ui@latest add input
 npx shadcn-ui@latest add toast
+npx shadcn-ui@latest add alert-dialog
+npx shadcn-ui@latest add calendar
+npx shadcn-ui@latest add popover
+
 
 
 Para todo el tema del login
@@ -31,3 +35,7 @@ npm install uploadthing @uploadthing/react
 
 Para la api
 npm install axios
+
+Para realizar pagos
+https://stripe.com/es?utm_campaign=EMEA_ES_es_Google_Search_Brand_Stripe_EXA-20811307326&utm_medium=cpc&utm_source=google&ad_content=682904374079&utm_term=stripe&utm_matchtype=e&utm_adposition=&utm_device=c&gad_source=1&gclid=Cj0KCQjwzby1BhCQARIsAJ_0t5N-AgqZY0pWGw8Q69OVQy7IHLHTDg76l52q12BpswYW6DQ0ymuyJKcaAu7DEALw_wcB
+https://docs.stripe.com/stripe-js/react
