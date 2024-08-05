@@ -5,7 +5,7 @@ import { persist, createJSONStorage } from "zustand/middleware";
 
 interface UseLovedCarsType {
   lovedItems: Car[];
-  addLovedItem: (data: Car) => void;
+  addLoveItem: (data: Car) => void;
   removeLovedItem: (id: string) => void;
 }
 
@@ -13,7 +13,7 @@ export const useLovedCars = create(
   persist<UseLovedCarsType>(
     (set, get) => ({
       lovedItems: [],
-      addLovedItem: (data: Car) => {
+      addLoveItem: (data: Car) => {
         const currentLovedItems = get().lovedItems;
         const existingItem = currentLovedItems.find(
           (item) => item.id === data.id

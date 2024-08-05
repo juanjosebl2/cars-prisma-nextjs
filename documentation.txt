@@ -15,6 +15,7 @@ npx shadcn-ui@latest add toast
 npx shadcn-ui@latest add alert-dialog
 npx shadcn-ui@latest add calendar
 npx shadcn-ui@latest add popover
+npx shadcn-ui@latest add table
 
 
 

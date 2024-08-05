@@ -22,7 +22,7 @@ export default async function PageDashboard() {
   return (
     <div>
       <div className="flex justify-between">
-        <h2 className="text-2xl font-bold">Listado de coches</h2>
+        <h2 className="mb-4 text-2xl font-bold">Listado de coches</h2>
 
       </div>
       <ListCars cars={cars} />

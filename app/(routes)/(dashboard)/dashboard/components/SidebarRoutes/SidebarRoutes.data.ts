@@ -27,6 +27,6 @@ export const dataAdminSidebar = [
     {
         icon: NotebookPen,
         label: "Todas las reservas",
-        href: "/reserves",
+        href: "/dashboard/admin/reserves-admin",
     }
 ]

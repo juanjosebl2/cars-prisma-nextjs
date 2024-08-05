@@ -1,20 +1,21 @@
 "use client";
 
-import { Car } from "@prisma/client";
-import { ListCarsProps } from "./ListCars.types";
-import Image from "next/image";
-import { Fuel, Gauge, Gem, Heart, Users, Wrench } from "lucide-react";
 import { ModalAddReservation } from "@/components/ui/Shared/ModalAddReservation";
 import { useLovedCars } from "@/hooks/use-loved-cars";
+import { Car } from "@prisma/client";
+import { Fuel, Gauge, Gem, Heart, Users, Wrench } from "lucide-react";
+import Image from "next/image";
 
-export function ListCars(props: ListCarsProps) {
-  const { cars } = props;
+export function ListLovedCars() {
   const { addLoveItem, lovedItems, removeLovedItem } = useLovedCars();
 
-
   return (
-    <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
-      {cars.map((car: Car) => {
+    <>
+      {lovedItems.length === 0 ? (
+        <p>No tienes coches en tu lista de favoritos</p>
+      ) : (
+        <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
+      {lovedItems.map((car: Car) => {
         const {
           priceDay,
           photo,
@@ -80,5 +81,7 @@ export function ListCars(props: ListCarsProps) {
         );
       })}
     </div>
+      )}
+    </>
   );
 }
