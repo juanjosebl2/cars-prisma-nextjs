@@ -1,0 +1,122 @@
+{
+    "signIn": {
+      "start": {
+        "title": "Iniciar sesión",
+        "subtitle": "Usa tu cuenta para iniciar sesión",
+        "actionText": "Continuar",
+        "actionLink": "o regístrate"
+      },
+      "emailLink": {
+        "title": "Verifica tu correo electrónico",
+        "subtitle": "Te hemos enviado un enlace de inicio de sesión a {email}",
+        "formTitle": "Reenviar enlace de inicio de sesión",
+        "formSubtitle": "Introduce tu correo electrónico para reenviar el enlace de inicio de sesión",
+        "resendButton": "Reenviar enlace",
+        "verified": {
+          "title": "Correo electrónico verificado",
+          "subtitle": "Tu correo ha sido verificado correctamente."
+        },
+        "loading": {
+          "title": "Verificando...",
+          "subtitle": "Por favor espera mientras verificamos tu correo."
+        },
+        "verifiedSwitchTab": {
+          "title": "Cambio de pestaña",
+          "subtitle": "Por favor, cambia a la pestaña original después de verificar."
+        },
+        "clientMismatch": {
+          "title": "Error de coincidencia del cliente",
+          "subtitle": "El enlace de verificación se ha abierto en un navegador diferente."
+        },
+        "expired": {
+          "title": "Enlace expirado",
+          "subtitle": "El enlace ha expirado, por favor solicita uno nuevo."
+        },
+        "expiredLink": "Reenviar enlace"
+      },
+      "emailCode": {
+        "title": "Introduce el código enviado a {email}",
+        "subtitle": "No recibiste el correo? {resend}",
+        "formTitle": "Introduce el código",
+        "formSubtitle": "Hemos enviado un código de 6 dígitos a {email}",
+        "resendButton": "Reenviar código"
+      },
+      "phoneCode": {
+        "title": "Introduce el código enviado a {phoneNumber}",
+        "subtitle": "No recibiste el SMS? {resend}",
+        "formTitle": "Introduce el código",
+        "formSubtitle": "Hemos enviado un código de 6 dígitos a {phoneNumber}",
+        "resendButton": "Reenviar código"
+      },
+      "password": {
+        "title": "Iniciar sesión con contraseña",
+        "subtitle": "Introduce tu correo electrónico y contraseña",
+        "emailLabel": "Correo electrónico",
+        "passwordLabel": "Contraseña",
+        "forgotPassword": "¿Olvidaste tu contraseña?",
+        "submitButton": "Iniciar sesión"
+      },
+      "alternativeMethods": {
+        "title": "Otras formas de iniciar sesión",
+        "emailLink": "Iniciar sesión con enlace de correo electrónico",
+        "emailCode": "Iniciar sesión con código de correo electrónico",
+        "phoneCode": "Iniciar sesión con código de SMS"
+      }
+    },
+    "signUp": {
+      "start": {
+        "title": "Crear una cuenta",
+        "subtitle": "Introduce tus datos para registrarte",
+        "actionText": "Crear cuenta",
+        "actionLink": "o inicia sesión"
+      },
+      "emailLink": {
+        "title": "Verifica tu correo electrónico",
+        "subtitle": "Te hemos enviado un enlace de verificación a {email}",
+        "formTitle": "Reenviar enlace de verificación",
+        "formSubtitle": "Introduce tu correo electrónico para reenviar el enlace de verificación",
+        "resendButton": "Reenviar enlace"
+      },
+      "emailCode": {
+        "title": "Introduce el código enviado a {email}",
+        "subtitle": "No recibiste el correo? {resend}",
+        "formTitle": "Introduce el código",
+        "formSubtitle": "Hemos enviado un código de 6 dígitos a {email}",
+        "resendButton": "Reenviar código"
+      },
+      "phoneCode": {
+        "title": "Introduce el código enviado a {phoneNumber}",
+        "subtitle": "No recibiste el SMS? {resend}",
+        "formTitle": "Introduce el código",
+        "formSubtitle": "Hemos enviado un código de 6 dígitos a {phoneNumber}",
+        "resendButton": "Reenviar código"
+      },
+      "password": {
+        "title": "Crear cuenta con contraseña",
+        "subtitle": "Introduce tu correo electrónico y contraseña",
+        "emailLabel": "Correo electrónico",
+        "passwordLabel": "Contraseña",
+        "confirmPasswordLabel": "Confirmar contraseña",
+        "submitButton": "Crear cuenta"
+      },
+      "alternativeMethods": {
+        "title": "Otras formas de registrarse",
+        "emailLink": "Registrarse con enlace de correo electrónico",
+        "emailCode": "Registrarse con código de correo electrónico",
+        "phoneCode": "Registrarse con código de SMS"
+      }
+    },
+    "userProfile": {
+      "manageAccount": "Administrar cuenta",
+      "signOut": "Cerrar sesión",
+      "personalInfo": {
+        "title": "Información personal",
+        "subtitle": "Administra tu información personal"
+      },
+      "security": {
+        "title": "Seguridad",
+        "subtitle": "Administra la configuración de seguridad"
+      }
+    }
+  }
+  
