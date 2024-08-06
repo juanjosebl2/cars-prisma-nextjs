@@ -53,7 +53,11 @@ npm install stripe
 Codigo seguridad stripe empresa
 cvbq-mpny-imcu-tdge-lbde
 
-Animaciones
+Animaciones loved car
 https://zustand-demo.pmnd.rs/
 https://www.npmjs.com/package/zustand
 npm i zustand
+
+Animaciones para la pagina principal
+https://www.npmjs.com/package/framer-motion
+npm i framer-motion

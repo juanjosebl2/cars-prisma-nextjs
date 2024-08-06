@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Navbar } from "@/components/ui/Shared/ModalAddReservation/Navbar";
+import { Navbar } from "@/components/ui/Shared/Navbar";
 import Link from "next/link";
 
 export default function orderConfirmationPage() {
