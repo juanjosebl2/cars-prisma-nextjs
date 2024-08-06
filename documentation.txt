@@ -16,7 +16,7 @@ npx shadcn-ui@latest add alert-dialog
 npx shadcn-ui@latest add calendar
 npx shadcn-ui@latest add popover
 npx shadcn-ui@latest add table
-
+npx shadcn-ui@latest add carousel
 
 
 Para todo el tema del login
