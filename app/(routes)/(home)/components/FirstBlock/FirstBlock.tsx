@@ -10,7 +10,7 @@ export function FirstBlock() {
           <span className="block">DriveX</span>
           En españa
         </h1>
-        <p className="max-w-sm mt-2 text-lg lg:mt-5 lg:text-xl">
+        <p className="max-w-sm mt-8 text-lg lg:mt-8 lg:text-xl">
           La mejora calidad en coches del mundo, ahora en España. Conoce
           nuestros modelos y disfruta de la mejor experiencia de manejo.
         </p>

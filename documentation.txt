@@ -17,7 +17,7 @@ npx shadcn-ui@latest add calendar
 npx shadcn-ui@latest add popover
 npx shadcn-ui@latest add table
 npx shadcn-ui@latest add carousel
-
+npm i embla-carousel-autoplay
 
 Para todo el tema del login
 https://clerk.com/
