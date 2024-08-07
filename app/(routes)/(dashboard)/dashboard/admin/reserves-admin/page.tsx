@@ -4,12 +4,13 @@ import { auth, currentUser } from "@clerk/nextjs/server"
 import Link from "next/link"
 import { redirect } from "next/navigation"
 import { TableReserves } from "./TableReserves"
+import { isAdministrator } from "@/lib/isAdministratos"
 
 export default async function pageReservesAdmin() {
     const {userId} = auth()
     const user = await currentUser()
     
-    if (!userId || !user) {
+    if (!userId || !user || !isAdministrator(userId)) {
         return redirect("/")
     }
 

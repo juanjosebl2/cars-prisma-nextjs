@@ -1,7 +1,7 @@
 import { db } from "@/lib/db"
 import { auth } from "@clerk/nextjs/server"
 import { redirect } from "next/navigation"
-import { ListCars } from "./components/ListCars"
+import { PageDashboardClient } from "./components/PageMainDashboard"
 
 export default async function PageDashboard() {
 
@@ -19,13 +19,5 @@ export default async function PageDashboard() {
     }
   })
 
-  return (
-    <div>
-      <div className="flex justify-between">
-        <h2 className="mb-4 text-2xl font-bold">Listado de coches</h2>
-
-      </div>
-      <ListCars cars={cars} />
-    </div>
-  )
+  return <PageDashboardClient cars={cars} />
 }
